@@ -14,8 +14,8 @@ The project focuses on designing a complete user flow for an event platform, inc
 - Clean multi-page website structure
 
 ## Tech Stack
-- HTML5
-- CSS3
+- HTML
+- CSS
 
 ## Project Type
 - Frontend-only
