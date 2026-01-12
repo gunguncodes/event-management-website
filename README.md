@@ -1,5 +1,8 @@
 # Event Management Website
 
+## Live Demo
+🔗 https://gunguncodes.github.io/event-management-website/
+
 ## Overview
 This is a **frontend-only Event Management Website** built using **pure HTML and CSS**.
 
