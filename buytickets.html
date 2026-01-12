@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy Tickets | UniEvent</title>
+  <link rel="stylesheet" href="buytickets.css">
+</head>
+<body>
+
+  <section class="ticket-container">
+    <div class="ticket-box" id="ticketBox">
+      <h1>🎟 Buy Your Event Ticket</h1>
+      <p class="subtitle">“Every great memory begins with a ticket to something special.”</p>
+
+      <form id="ticketForm" class="ticket-form">
+        <div class="input-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="input-group">
+          <label for="event">Select Event</label>
+          <select id="event" required>
+            <option value="" disabled selected>Select your event</option>
+            <option>Tech Fest 2025</option>
+            <option>Freshers' Party</option>
+            <option>Annual Cultural Night</option>
+            <option>Sports Meet</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="quantity">Number of Tickets</label>
+          <input type="number" id="quantity" min="1" max="10" value="1" required>
+        </div>
+
+        <button type="submit" class="btn">Book Ticket</button>
+      </form>
+    </div>
+
+    <!-- Confirmation Section -->
+    <div class="confirmation-box" id="confirmationBox" style="display: none;">
+      <h2>✅ Booking Confirmed!</h2>
+      <p>Here are your ticket details:</p>
+      <div class="ticket-summary" id="ticketSummary"></div>
+      <button id="bookAnother" class="btn">Book Another Ticket</button>
+    </div>
+  </section>
+
+  <script>
+    const form = document.getElementById("ticketForm");
+    const ticketBox = document.getElementById("ticketBox");
+    const confirmationBox = document.getElementById("confirmationBox");
+    const ticketSummary = document.getElementById("ticketSummary");
+    const bookAnother = document.getElementById("bookAnother");
+
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const event = document.getElementById("event").value;
+      const quantity = document.getElementById("quantity").value;
+
+      ticketSummary.innerHTML = `
+        <div class="ticket-detail"><strong>Name:</strong> ${name}</div>
+        <div class="ticket-detail"><strong>Email:</strong> ${email}</div>
+        <div class="ticket-detail"><strong>Event:</strong> ${event}</div>
+        <div class="ticket-detail"><strong>Tickets:</strong> ${quantity}</div>
+        <div class="ticket-id"><strong>Ticket ID:</strong> #${Math.floor(100000 + Math.random() * 900000)}</div>
+      `;
+
+      ticketBox.style.display = "none";
+      confirmationBox.style.display = "block";
+      form.reset();
+    });
+
+    bookAnother.addEventListener("click", function() {
+      confirmationBox.style.display = "none";
+      ticketBox.style.display = "block";
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --bg: #0c0c15;
+  --card: #141422;
+  --text: #e5e5f0;
+  --accent1: #a855f7;
+  --accent2: #ec4899;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background:
+  linear-gradient(180deg, rgba(10, 0, 40, 0.7), rgba(0, 0, 0, 0.8)),
+  url("https://i.pinimg.com/736x/cc/63/ed/cc63ed54cc44dffd219f62859e0f92e9.jpg") center/cover fixed no-repeat;
+  color: var(--text);
+  line-height: 1.5;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, var(--accent1), var(--accent2));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.header p {
+  color: #b0b0c0;
+  margin-top: 0.5rem;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 0.5rem;
+}
+
+.search-bar input {
+  width: 60%;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #1c1c2b;
+  color: white;
+  outline: none;
+}
+
+.search-bar button {
+  background: linear-gradient(90deg, var(--accent1), var(--accent2));
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+
+.search-bar button:hover {
+  transform: scale(1.05);
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.event-card {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.3);
+}
+
+.event-card img {
+  width: 100%;
+  height: 160px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.event-card h3 {
+  color: white;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.event-card p {
+  color: #bcbcd4;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.event-card button {
+  background: linear-gradient(90deg, var(--accent1), var(--accent2));
+  border: none;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+
+.event-card button:hover {
+  transform: scale(1.05);
+}

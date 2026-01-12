@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Event | Campus Buzz</title>
+  <link rel="stylesheet" href="create-event.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="left-section">
+      <h1>Bring Your Ideas to Life!</h1>
+      <p>Create, organize, and showcase unforgettable university events with just a few clicks.</p>
+      <p class="quote">“Great events don’t just happen — they’re created by you.”</p>
+    </div>
+
+    <div class="right-section">
+      <h2>Create New Event</h2>
+      <form action="#">
+        <label for="event-name">Event Name</label>
+        <input type="text" id="event-name" placeholder="Enter event name" required />
+
+        <label for="event-date">Date</label>
+        <input type="date" id="event-date" required />
+
+        <label for="event-time">Time</label>
+        <input type="time" id="event-time" required />
+
+        <label for="event-type">Event Type</label>
+        <select id="event-type" required>
+          <option value="">Select Type</option>
+          <option value="Music & Concerts">Music & Concerts</option>
+          <option value="Technology & Innovation">Technology & Innovation</option>
+          <option value="Sports & Fitness">Sports & Fitness</option>
+          <option value="Art & Culture">Art & Culture</option>
+          <option value="Food & Culinary">Food & Culinary</option>
+          <option value="Fashion & Lifestyle">Fashion & Lifestyle</option>
+          <option value="Comedy & Entertainment">Comedy & Entertainment</option>
+          <option value="Education & Seminars">Education & Seminars</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="location">Location</label>
+        <input type="text" id="location" placeholder="e.g., Auditorium, Ground, etc." required />
+
+        <label for="description">Description</label>
+        <textarea id="description" rows="4" placeholder="Write a brief about your event..." required></textarea>
+
+        <button type="submit" class="btn">Create Event</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
