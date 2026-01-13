@@ -6,12 +6,12 @@
 ## Overview
 This is a **frontend-only Event Management Website** built using **pure HTML and CSS**.
 
-The project focuses on designing a complete user flow for an event platform, including event discovery, ticket booking UI, and user authentication pages — without any backend or database integration.
+The project focuses on designing a complete user flow for an event platform, including event discovery, ticket booking UI, and user authentication pages without any backend or database integration.
 
 ## Features
 - Ticket creation and ticket booking UI
 - Live event display layout
-- User sign-up and sign-in pages
+- User signup and signin pages
 - Search and discover new events
 - Feedback and “How it works” pages
 - Clean multi-page website structure
@@ -21,12 +21,12 @@ The project focuses on designing a complete user flow for an event platform, inc
 - CSS
 
 ## Project Type
-- Frontend-only
+- Frontend only
 - Static website
 - No backend / No database
 
 ## Purpose
-This project was created to practice frontend structure, UI flow, and real-world website layout for an event management platform.
+This project was created to practice frontend structure, UI flow, and real world website layout for an event management platform.
 
 ## Author
 Gungun
