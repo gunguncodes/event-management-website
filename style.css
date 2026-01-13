@@ -170,27 +170,20 @@ background-attachment: fixed;
   border-radius: 20px;
 }*/
 
-.video-placeholder {
-  display: flex;
+.hero-video {
   width: 40%;
-  height: 40px;
-  justify-content: center;
-}
-
-.video {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  height: 40x;
+  max-width: 500px;
   border-radius: 20px;
+  overflow: hidden;
 }
 
-.video video {
+.hero-video video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.6);
+  display: block;
 }
+
 
 /* Sections */
 .section {
@@ -825,6 +818,24 @@ body {
   visibility: hidden;
 }
 
+@media (max-width: 900px) {
+  .hero-video {
+    width: 100%;
+    max-width: 100%;
+    height: 220px;
+    margin-top: 2rem;
+  }
+
+  .hero-video video {
+    height: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-video {
+    height: 180px;
+  }
+}
 
 
 
